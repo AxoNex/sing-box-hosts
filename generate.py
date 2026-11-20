@@ -15,6 +15,9 @@ Supported platforms (see ``PLATFORM_OUTPUT``):
         one ``0.0.0.0 <domain>`` line per domain
 
 Only the platform types present in ``rules.json["platforms"]`` are generated.
+
+In addition to the per-rule files, a merged ``all_in_one`` rule is generated from
+the union of every ``block`` source (``rules/block/all_in_one-<service>.<ext>``).
 """
 
 import json
@@ -30,6 +33,9 @@ PLATFORM_OUTPUT = {
     "sing-box": ("singbox", ".json"),
     "hosts": ("hosts", ".txt"),
 }
+
+# Rule name used for the merged "all in one" output.
+ALL_IN_ONE = "all_in_one"
 
 IPV4_RE = re.compile(r"^\d{1,3}(?:\.\d{1,3}){3}$")
 
@@ -97,6 +103,23 @@ CONVERTERS = {
 }
 
 
+def write_rule_files(
+    name: str, domains: list[str], platforms: list[str], out_dir: Path
+) -> None:
+    """Write every platform conversion of ``domains`` under ``out_dir``."""
+    for platform in platforms:
+        if platform not in CONVERTERS:
+            print(f"[{name}] skip unsupported platform: {platform}")
+            continue
+        service, ext = PLATFORM_OUTPUT[platform]
+        payload = CONVERTERS[platform](domains)
+        if isinstance(payload, dict):
+            payload = json.dumps(payload, ensure_ascii=False, indent=2) + "\n"
+        out_path = out_dir / f"{name}-{service}{ext}"
+        out_path.write_text(payload, encoding="utf-8")
+        print(f"[{name}] wrote {out_path.relative_to(REPO_ROOT)}")
+
+
 def main() -> int:
     rules_path = REPO_ROOT / "rules.json"
     rules = json.loads(rules_path.read_text(encoding="utf-8"))
@@ -107,6 +130,7 @@ def main() -> int:
     out_dir.mkdir(parents=True, exist_ok=True)
 
     failures = 0
+    all_domains: set[str] = set()
     for name, url in block.items():
         print(f"[{name}] fetching {url}")
         try:
@@ -118,20 +142,17 @@ def main() -> int:
 
         domains = parse_domains(content)
         print(f"[{name}] {len(domains)} domains")
+        write_rule_files(name, domains, platforms, out_dir)
+        all_domains.update(domains)
 
-        for platform in platforms:
-            if platform not in CONVERTERS:
-                print(f"[{name}] skip unsupported platform: {platform}")
-                continue
-            service, ext = PLATFORM_OUTPUT[platform]
-            payload = CONVERTERS[platform](domains)
-            if isinstance(payload, dict):
-                payload = json.dumps(payload, ensure_ascii=False, indent=2) + "\n"
-            out_path = out_dir / f"{name}-{service}{ext}"
-            out_path.write_text(payload, encoding="utf-8")
-            print(f"[{name}] wrote {out_path.relative_to(REPO_ROOT)}")
+    if all_domains:
+        merged = sorted(all_domains)
+        print(f"[{ALL_IN_ONE}] {len(merged)} domains (merged)")
+        write_rule_files(ALL_IN_ONE, merged, platforms, out_dir)
+    else:
+        print(f"[{ALL_IN_ONE}] no domains; skipping", file=sys.stderr)
 
-    return 1 if failures == len(block) else 0
+    return 1 if failures > 0 and failures == len(block) else 0
 
 
 if __name__ == "__main__":

@@ -15,6 +15,15 @@
 - `rules/block/秋风广告规则-singbox.json`（sing-box rule-set 源格式：`{"version":3,"rules":[{"domain":[...]}]}`）
 - `rules/block/秋风广告规则-hosts.txt`（每行 `0.0.0.0 <域名>`）
 
+## 全量合并（all_in_one）
+
+除了每条规则单独生成外，还会把 `block` 中**所有**源的域名取并集，合并生成一个全量规则，输出为：
+
+- `rules/block/all_in_one-singbox.json`
+- `rules/block/all_in_one-hosts.txt`
+
+方便需要「一份完整规则」的场景直接引用。
+
 ## 平台类型
 
 | platforms 值 | 输出文件 | 格式 |
