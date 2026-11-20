@@ -1,0 +1,11 @@
+{
+    "block": {
+        "秋风广告规则": "https://github.com/TG-Twilight/AWAvenue-Ads-Rule/raw/refs/heads/main/Filters/AWAvenue-Ads-Rule-hosts.txt",
+        "Adaway": "https://adaway.org/hosts.txt",
+        "AdguardDNS": "https://github.com/r-a-y/mobile-hosts/raw/refs/heads/master/AdguardDNS.txt"
+    },
+    "platforms": [
+        "sing-box",
+        "hosts"
+    ]
+}
