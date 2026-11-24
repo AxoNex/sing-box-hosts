@@ -303,6 +303,8 @@
 0.0.0.0 0.a.ns.cloudapp-emailvision.net.daraz.com
 0.0.0.0 0.application-00d5u000020x0jquai.okta.net.daraz.com
 0.0.0.0 0.csr21.net.daraz.com
+0.0.0.0 0.jump.shinyalto.pro
+0.0.0.0 0.lift.openhorse.me
 0.0.0.0 0.nextyourcontent.com
 0.0.0.0 0.ns.pageemailvision.net.daraz.com
 0.0.0.0 0.r.msn.com
@@ -1239,6 +1241,8 @@
 0.0.0.0 1.appexchange.com
 0.0.0.0 1.ftb.al
 0.0.0.0 1.iasmembership.org
+0.0.0.0 1.jump.shinyalto.pro
+0.0.0.0 1.lift.openhorse.me
 0.0.0.0 1.oceanfrontwealth.com
 0.0.0.0 1.ofsnetwork.com
 0.0.0.0 1.salesforce-partners.com
@@ -1472,7 +1476,9 @@
 0.0.0.0 2-spring.net.daraz.com
 0.0.0.0 2.brinkshome.com
 0.0.0.0 2.cdatire.com
+0.0.0.0 2.jump.shinyalto.pro
 0.0.0.0 2.krayden.com
+0.0.0.0 2.lift.openhorse.me
 0.0.0.0 2.maaqkj.com
 0.0.0.0 2.mymoni.com
 0.0.0.0 2.rubanners.com
@@ -1571,6 +1577,8 @@
 0.0.0.0 2tty.overstappen.nl
 0.0.0.0 2x1gratis.com
 0.0.0.0 2znp09oa.com
+0.0.0.0 3.jump.shinyalto.pro
+0.0.0.0 3.lift.openhorse.me
 0.0.0.0 30001.hittail.com
 0.0.0.0 30811.hittail.com
 0.0.0.0 30d3t003002re27eag.net.daraz.com
@@ -1631,6 +1639,8 @@
 0.0.0.0 3wn3w3skxpym.round.t3.gg
 0.0.0.0 3xtraffic.com
 0.0.0.0 4.afs.googleadservices.com
+0.0.0.0 4.jump.shinyalto.pro
+0.0.0.0 4.lift.openhorse.me
 0.0.0.0 403.hqhost.net
 0.0.0.0 404.fuckyoucash.com
 0.0.0.0 404.hqhost.net
@@ -1668,6 +1678,8 @@
 0.0.0.0 4threvolutionarywar.wordpress.com
 0.0.0.0 4ur.click
 0.0.0.0 4w-wrestling.us.intellitxt.com
+0.0.0.0 5.jump.shinyalto.pro
+0.0.0.0 5.lift.openhorse.me
 0.0.0.0 506.xg4ken.com
 0.0.0.0 50websads.com
 0.0.0.0 51.la
@@ -1703,6 +1715,8 @@
 0.0.0.0 5galert.com
 0.0.0.0 5starsupport.us.intellitxt.com
 0.0.0.0 5wzgtq8dpk.com
+0.0.0.0 6.jump.shinyalto.pro
+0.0.0.0 6.lift.openhorse.me
 0.0.0.0 602.stats.misstrends.com
 0.0.0.0 604.stats.misstrends.com
 0.0.0.0 606.stats.misstrends.com
@@ -1761,6 +1775,8 @@
 0.0.0.0 6wwvu4ate8g6w68q.rj83p.api.daraz.com.net.daraz.com
 0.0.0.0 6wwvu4ate8g6w68q.stg.car73.net.daraz.com.net.daraz.com
 0.0.0.0 6wwvu4ate8g6w68q.v1.net.daraz.com
+0.0.0.0 7.jump.shinyalto.pro
+0.0.0.0 7.lift.openhorse.me
 0.0.0.0 7.net.daraz.com
 0.0.0.0 7.net.daraz.com.00d1n0000017glquam.net.daraz.com
 0.0.0.0 70news.wordpress.com
@@ -1793,6 +1809,8 @@
 0.0.0.0 7wrxo2xh.iriscreative.co
 0.0.0.0 7x.cc
 0.0.0.0 7zip.fr
+0.0.0.0 8.jump.shinyalto.pro
+0.0.0.0 8.lift.openhorse.me
 0.0.0.0 803.stats.misstrends.com
 0.0.0.0 8041691.comms.hipages.com.au
 0.0.0.0 8041691.engage.hipages.com.au
@@ -1822,6 +1840,8 @@
 0.0.0.0 8er.net.daraz.com
 0.0.0.0 8hj500ro4t7.groovepages.com
 0.0.0.0 8kun.top
+0.0.0.0 9.jump.shinyalto.pro
+0.0.0.0 9.lift.openhorse.me
 0.0.0.0 911.x24hr.com
 0.0.0.0 911truth.org
 0.0.0.0 922.hittail.com
@@ -1993,6 +2013,7 @@
 0.0.0.0 a.postrelease.com
 0.0.0.0 a.pourquoidocteur.fr
 0.0.0.0 a.prisacom.com
+0.0.0.0 a.pub.network
 0.0.0.0 a.publicmobile.ca
 0.0.0.0 a.rad.live.com
 0.0.0.0 a.remarketstats.com
@@ -7765,6 +7786,7 @@
 0.0.0.0 api.appmetrica.yandex.ru
 0.0.0.0 api.bigmobileads.com
 0.0.0.0 api.bounceexchange.com
+0.0.0.0 api.btloader.com
 0.0.0.0 api.bttrack.com
 0.0.0.0 api.bunzlaucastle.com
 0.0.0.0 api.cortana.ai
@@ -9156,6 +9178,7 @@
 0.0.0.0 b.pickme.lk
 0.0.0.0 b.prod1.youroffers.dominos.ca
 0.0.0.0 b.pscp.live
+0.0.0.0 b.pub.network
 0.0.0.0 b.publicmobile.ca
 0.0.0.0 b.rad.live.com
 0.0.0.0 b.recwwcc5.info
@@ -10336,6 +10359,7 @@
 0.0.0.0 btbusiness.tt.omtrdc.net
 0.0.0.0 btcom.112.2o7.net
 0.0.0.0 btglss.net
+0.0.0.0 btloader.com
 0.0.0.0 btn.listonic.com
 0.0.0.0 btn.rtl2.de
 0.0.0.0 btnativedirect.com
@@ -10557,6 +10581,7 @@
 0.0.0.0 c.ph.msn.com
 0.0.0.0 c.prodigy.msn.com
 0.0.0.0 c.pt.msn.com
+0.0.0.0 c.pub.network
 0.0.0.0 c.realtytrac.com
 0.0.0.0 c.refun.do
 0.0.0.0 c.rhapsody.com
@@ -13548,6 +13573,7 @@
 0.0.0.0 d.mlcdn.com.br
 0.0.0.0 d.ns.emailvision.authenticategithub.net.daraz.com
 0.0.0.0 d.ns.gitvision.net.daraz.com
+0.0.0.0 d.pub.network
 0.0.0.0 d.raw-ns.emailvision.net.daraz.com
 0.0.0.0 d.santemagazine.fr
 0.0.0.0 d.shareaholic.com
